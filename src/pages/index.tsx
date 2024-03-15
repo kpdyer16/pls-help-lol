@@ -20,7 +20,7 @@ export default function Home() {
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-black/20"
               href="/issues/new?user=enduser"
             >
-              <h3 className="text-2xl font-bold">I'm an end user →</h3>
+              <h3 className="text-2xl font-bold">I&apos;m an end user →</h3>
               <div className="text-lg">
                 Report a new issue or find an existing issue
               </div>
@@ -29,7 +29,7 @@ export default function Home() {
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-black/20"
               href="/issues?user=admin"
             >
-              <h3 className="text-2xl font-bold">I'm an admin →</h3>
+              <h3 className="text-2xl font-bold">I&apos;m an admin →</h3>
               <div className="text-lg">
                 Respond to existing issues or update the status of the ticket
               </div>
