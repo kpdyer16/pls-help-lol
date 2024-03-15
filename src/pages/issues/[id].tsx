@@ -18,7 +18,7 @@ export default function Issue({  }) {
   
   
   if (issue === null) {
-    return (<p>couldn't find this issue</p>)
+    return (<p>couldn&apos;t find this issue</p>)
   }
 
   const responses = responseData.data; 
