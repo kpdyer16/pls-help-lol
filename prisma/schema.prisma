@@ -10,11 +10,22 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model Post {
+model IssueResponse {
     id        Int      @id @default(autoincrement())
-    name      String
+    text      String
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
+    issue     Issue    @relation(fields: [issueId], references: [id])
+    issueId   Int
+}
 
-    @@index([name])
+model Issue {
+    id            Int             @id @default(autoincrement())
+    title         String
+    description   String
+    email         String
+    status        String
+    createdAt     DateTime        @default(now())
+    updatedAt     DateTime        @updatedAt
+    IssueResponse IssueResponse[]
 }
